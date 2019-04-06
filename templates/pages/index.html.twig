@@ -1,0 +1,36 @@
+{% extends "base.html.twig" %}
+
+{% block title %} Currency Calculator {% endblock %}
+
+{% block body %}
+  <h1>Welcome!</h1>
+  <h3>This is a currency calculator</h3>
+
+  <form class="calculation-form">
+  <div class="form-group">
+    <label class="label" for="exampleFormControlSelect1">Base</label>
+    <select class="form-control base" id="exampleFormControlSelect1">
+      {% for currency in currencies %}
+      <option>{{ currency.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="label" for="exampleFormControlInput1">Amount</label>
+    <input type="number" class="form-control amount" id="exampleFormControlInput1" placeholder="Amount">
+  </div>
+  <div class="form-group">
+    <label class="label" for="exampleFormControlSelect1">Exchange</label>
+    <select class="form-control exchange" id="exampleFormControlSelect1">
+      {% for currency in currencies %}
+      <option>{{ currency.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  </form>
+  <button class="btn btn-primary" onclick="currencyCalculation()">Calculate</button>
+
+  <h3 class="show-result"></h3>
+
+
+{% endblock %}

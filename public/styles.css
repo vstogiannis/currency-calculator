@@ -1,0 +1,36 @@
+body{
+  text-align: center;
+  font-family: fantasy;
+  font-style: normal;
+  background: #e6ffff;
+  color: #0099cc;
+}
+.calculation-form{
+  padding: 1%;
+  margin: 5% auto auto;
+  max-width: 40%;
+  border: 3px solid;
+}
+.label{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.show-result{
+  margin-top: 5%;
+}
+
+.admin-form{
+  max-width: 30%;
+  display: inline-block;
+  margin: 10% auto auto auto;
+}
+.btn-add{
+  position: relative;
+  left: 18%;
+  bottom: 40px;
+}
+.admin-currencies{
+  font-size: 1.5rem;
+  margin-top: 2%;
+  padding: 0;
+}
